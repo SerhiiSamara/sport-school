@@ -1,26 +1,52 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer components {
+  .container {
+    @apply py-0 px-[15px];
   }
 }
 
+@theme {
+  --color-header: rgba(177, 43, 44, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-main-dark: rgba(24, 25, 28, 1);
+  --color-block-dark: rgba(41, 41, 46, 1);
+  --color-block-grey: rgba(61, 61, 63, 1);
+  --color-light: rgba(238, 238, 238, 1);
+
+  --color-start: rgba(224, 224, 224, 1);
+  --color-end: rgba(189, 189, 189, 1);
+
+  --color-button: rgba(203, 45, 45, 1);
+  --color-button-hover: rgba(225, 33, 33, 1);
+  --color-button-press: rgba(168, 31, 23, 1);
+  --color-button-disable: rgba(175, 175, 175, 1);
+
+  --breakpoint-sm: 375px;
+  --breakpoint-md: 720px;
+  --breakpoint-lg: 1440px;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply m-0 bg-main-dark text-light text-base font-normal leading-none tracking-normal;
+}
+
+.bg-nav-gradient {
+  @apply bg-gradient-to-b from-start to-end;
+}
+
+.mobile-nav {
+  @apply bg-block-grey rounded-sm;
+}
+
+.mobile-nav-title {
+  @apply px-[12px] py-[9px];
+}
+
+.page-title {
+  @apply mb-[12px] text-2xl font-bold;
 }
