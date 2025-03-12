@@ -2,7 +2,12 @@ import React from 'react'
 
 const Nav: React.FC = () => {
 	return (
-		<h1 className='bg-nav-gradient text-dark'>Nav</h1>
+		<nav className='bg-nav-gradient'>
+			<div className='container m-auto'>
+				<h1 className=' text-main-dark'>Nav</h1>
+			</div>
+		</nav>
+
 	)
 }
 

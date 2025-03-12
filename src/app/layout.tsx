@@ -19,12 +19,10 @@ const RootLayout: FC<Props> = ({ children }) => {
 	return (
 		<html lang="en">
 			<body>
-				<div className="flex flex-col">
-					<Header />
-					<Nav />
-					{children}
-					<Footer />
-				</div>
+				<Header />
+				<Nav />
+				{children}
+				<Footer />
 			</body>
 		</html>
 	);
