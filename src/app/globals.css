@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply m-0 bg-main-dark text-light text-base font-normal leading-none tracking-normal;
+  }
+}
+
 @layer components {
   .container {
     @apply py-0 px-[15px];
@@ -29,10 +35,6 @@
   --breakpoint-sm: 375px;
   --breakpoint-md: 720px;
   --breakpoint-lg: 1440px;
-}
-
-body {
-  @apply m-0 bg-main-dark text-light text-base font-normal leading-none tracking-normal;
 }
 
 .bg-nav-gradient {

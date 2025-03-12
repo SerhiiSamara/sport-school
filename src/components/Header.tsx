@@ -6,7 +6,7 @@ const Header: React.FC = () => {
 		<header className='bg-header text-white'>
 			<div className='container flex justify-between items-center m-auto py-[6px]'>
 				<div className='flex items-center'>
-					<Image src='/mobileLogo.png' alt='Logo' width={60} height={51} className='mr-[5px]' />
+					<Image src='/svg/mobileHeaderLogo.svg' alt='Logo' width={60} height={51} className='mr-[5px]' />
 					<p className='text-lg font-bold leading-[110%]'>КДЮСШ</p>
 				</div>
 				<button>

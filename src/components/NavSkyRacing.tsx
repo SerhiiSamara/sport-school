@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
+
+import Title from './Title';
 
 const NavSkyRacing: React.FC = () => {
 	return (
-		<h1>Navigation sky racing</h1>
-	)
+		<nav className='container pt-[28px]'>
+			<Title type='page-title'>Лижні гонки</Title>
+			<div className='w-full mobile-nav mb-[22px]'>
+				<p className='mobile-nav-title'>Розділи</p>
+			</div>
+		</nav>)
 }
 
 export default NavSkyRacing;

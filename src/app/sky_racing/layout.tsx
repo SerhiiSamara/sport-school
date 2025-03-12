@@ -8,11 +8,13 @@ type Props = {
 
 const SkyRacingLayout: FC<Props> = ({ children }) => {
 	return (
-		<>
-			<h1>Sky racing</h1>
+		<main className='w-full flex flex-col items-center bg-main-dark'>
 			<NavSkyRacing />
-			{children}
-		</>
+			<div className='w-full h-[1px] -mx-[16px] mb-[32px] bg-block-grey'></div>
+			<section className=''>
+				{children}
+			</section>
+		</main>
 	);
 };
 export default SkyRacingLayout;
