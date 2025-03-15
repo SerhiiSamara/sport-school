@@ -1,14 +1,15 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Header: React.FC = () => {
 	return (
 		<header className='bg-header text-white'>
 			<div className='container flex justify-between items-center m-auto py-[6px]'>
-				<div className='flex items-center'>
-					<Image src='/svg/mobileHeaderLogo.svg' alt='Logo' width={60} height={51} className='mr-[5px]' />
+				<Link href={'/'} className='flex items-center'>
+					<Image src='/svg/headerLogo.svg' alt='Logo' width={60} height={51} className='mr-[5px]' />
 					<p className='text-lg font-ermilov font-bold leading-[110%]'>КДЮСШ</p>
-				</div>
+				</Link>
 				<button>
 					<Image
 						className="ml-1"

@@ -5,49 +5,49 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "fixelTextRegular";
+  font-family: "Fixel Text";
   src: url("/fonts/FixelText/FixelText-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "fixelTextSemibold";
+  font-family: "Fixel Text Semibold";
   src: url("/fonts/FixelText/FixelText-SemiBold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "fixelDisplayRegular";
+  font-family: "Fixel Display";
   src: url("/fonts/FixelDisplay/FixelDisplay-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "fixelDisplaySemibold";
+  font-family: "Fixel Display Semibold";
   src: url("/fonts/FixelDisplay/FixelDisplay-SemiBold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "fixelDisplayBold";
+  font-family: "Fixel Display Bold";
   src: url("/fonts/FixelDisplay/FixelDisplay-Bold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "fixelDisplayMedium";
+  font-family: "Fixel Display Medium";
   src: url("/fonts/FixelDisplay/FixelDisplay-Medium.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "ermilov";
+  font-family: "Ermilov";
   src: url("/fonts/Ermilov/Ermilov.otf") format("otf");
   font-weight: normal;
   font-style: normal;
@@ -60,6 +60,7 @@
   --color-block-dark: rgba(41, 41, 46, 1);
   --color-block-grey: rgba(61, 61, 63, 1);
   --color-light: rgba(238, 238, 238, 1);
+  --color-black-text: rgba(17, 17, 17, 1);
 
   --color-start: rgba(224, 224, 224, 1);
   --color-end: rgba(189, 189, 189, 1);
@@ -73,18 +74,18 @@
   --breakpoint-md: 720px;
   --breakpoint-lg: 1440px;
 
-  --font-fixelTextRegular: "fixelTextRegular", "sans-serif";
-  --font-fixelTextSemibold: "fixelTextSemibold", "sans-serif";
-  --font-fixelDisplayRegular: "fixelDisplayRegular", "sans-serif";
-  --font-fixelTextRegular: "fixelDisplaySemibold", "sans-serif";
-  --font-fixelDisplayBold: "fixelDisplayBold", "sans-serif";
-  --font-fixelDisplayMedium: "fixelDisplayMedium", "sans-serif";
-  --font-ermilov: "ermilov", "sans-serif";
+  --font-text: "Fixel Text", "sans-serif";
+  --font-textSemibold: "Fixel Text Semibold", "sans-serif";
+  --font-display: "Fixel Display", "sans-serif";
+  --font-displayBold: "Fixel Display Bold", "sans-serif";
+  --font-displaySemibold: "Fixel Display Semibold", "sans-serif";
+  --font-displayMedium: "Fixel Display Medium", "sans-serif";
+  --font-ermilov: "Ermilov", "sans-serif";
 }
 
 @layer base {
   body {
-    @apply m-0 bg-main-dark text-light text-base font-fixelDisplayRegular font-normal leading-none tracking-normal;
+    @apply m-0 bg-main-dark text-light text-base font-text font-normal leading-none tracking-normal;
   }
 }
 
@@ -107,5 +108,5 @@
 }
 
 .page-title {
-  @apply mb-[12px] text-2xl font-bold;
+  @apply mb-[12px] font-displayBold text-2xl font-bold;
 }
