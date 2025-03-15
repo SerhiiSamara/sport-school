@@ -4,16 +4,53 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    @apply m-0 bg-main-dark text-light text-base font-normal leading-none tracking-normal;
-  }
+@font-face {
+  font-family: "fixelTextRegular";
+  src: url("/fonts/FixelText/FixelText-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@layer components {
-  .container {
-    @apply py-0 px-[15px];
-  }
+@font-face {
+  font-family: "fixelTextSemibold";
+  src: url("/fonts/FixelText/FixelText-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "fixelDisplayRegular";
+  src: url("/fonts/FixelDisplay/FixelDisplay-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "fixelDisplaySemibold";
+  src: url("/fonts/FixelDisplay/FixelDisplay-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "fixelDisplayBold";
+  src: url("/fonts/FixelDisplay/FixelDisplay-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "fixelDisplayMedium";
+  src: url("/fonts/FixelDisplay/FixelDisplay-Medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ermilov";
+  src: url("/fonts/Ermilov/Ermilov.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @theme {
@@ -35,6 +72,26 @@
   --breakpoint-sm: 375px;
   --breakpoint-md: 720px;
   --breakpoint-lg: 1440px;
+
+  --font-fixelTextRegular: "fixelTextRegular", "sans-serif";
+  --font-fixelTextSemibold: "fixelTextSemibold", "sans-serif";
+  --font-fixelDisplayRegular: "fixelDisplayRegular", "sans-serif";
+  --font-fixelTextRegular: "fixelDisplaySemibold", "sans-serif";
+  --font-fixelDisplayBold: "fixelDisplayBold", "sans-serif";
+  --font-fixelDisplayMedium: "fixelDisplayMedium", "sans-serif";
+  --font-ermilov: "ermilov", "sans-serif";
+}
+
+@layer base {
+  body {
+    @apply m-0 bg-main-dark text-light text-base font-fixelDisplayRegular font-normal leading-none tracking-normal;
+  }
+}
+
+@layer components {
+  .container {
+    @apply py-0 px-[15px];
+  }
 }
 
 .bg-nav-gradient {
